@@ -131,7 +131,6 @@ function Dropzone(props) {
         </form>
         <div>
             {loading ? <img src={Spinner} alt="로딩중" width="5%" /> : <img id="user_image" src="#" alt="" style={{maxWidth:'300px'}}/>}
-            
         </div>
         </section>
     );
