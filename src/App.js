@@ -14,6 +14,7 @@ import PctChoice from "./components/3_pct_choice";
 import Picture from "./components/3-1_picture";
 import Ai from "./components/3-1-1_ai";
 import Self from "./components/3-2-1_self";
+import Personal_color_result from "./components/Personal_color_result";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="3-1_picture" element={<Picture />} />
           <Route path="3-1-1_ai" element={<Ai />} />
           <Route path="3-2-1_self" element={<Self />} />
+          <Route path="Personal_color_result" element={<Personal_color_result />} />
         </Routes>
       </BrowserRouter>
     </div>
