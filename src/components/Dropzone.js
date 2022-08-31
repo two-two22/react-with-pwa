@@ -109,7 +109,7 @@ function Dropzone(props) {
             loading.src = {Spinner};
         }
         axios.get('http://localhost:4000/api/python_process').then(function(response){
-            console.log("데이터 확인만 %j", response.data);
+            console.log(JSON.stringify(response.data));
             //alert( JSON.stringify(response.data) );
         }).catch(function(error){
             console.log("실패");
