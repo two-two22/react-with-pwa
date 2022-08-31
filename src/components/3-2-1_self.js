@@ -1,10 +1,10 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Self() {
   return (
     <div>
-      <p>사진 분석 중</p>
+      <p><Link to="/3-1_picture">사진 선택하기</Link></p>
     </div>
   );
 }
