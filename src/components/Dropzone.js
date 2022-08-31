@@ -100,8 +100,14 @@ function Dropzone(props) {
     };
 
     const getResult = (e) => {
+        //e.preventDefault();
         setLoading(true);
-        e.preventDefault();
+        if(loading == true){
+            var container = document.getElementsByClassName('container');
+            container.style.display = 'none';
+            var loading = document.createElement('img');
+            loading.src = {Spinner};
+        }
         axios.get('http://localhost:4000/api/python_process').then(function(response){
             console.log("데이터 확인만 %j", response.data);
             //alert( JSON.stringify(response.data) );
@@ -110,6 +116,8 @@ function Dropzone(props) {
         });
         setLoading(false);
     };
+
+    useEffect(() => {getResult();}, [])
 
     const files = acceptedFiles.map(file => (
         <li key={file.path}>
@@ -127,10 +135,10 @@ function Dropzone(props) {
         </form> */}
         <form encType="multipart/form-data" method="post" type='file'>
                 <input accept="image/*" type="file" onChange={sendImgToServer} name="img" id="user_face_img"/>
-                <button type="submit" onClick={getResult}>내 얼굴형 분석하기</button>
+                <button type="button" onClick={getResult}>내 얼굴형 분석하기</button>
         </form>
         <div>
-            {loading ? <img src={Spinner} alt="로딩중" width="5%" /> : <img id="user_image" src="#" alt="" style={{maxWidth:'300px'}}/>}
+            <img id="user_image" src="#" alt="" style={{maxWidth:'300px'}}/>
         </div>
         </section>
     );

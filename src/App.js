@@ -10,7 +10,6 @@ import {
 import Mainpage from "./components/1_mainpage";
 import PctChoice from "./components/3_pct_choice";
 import Picture_2 from "./components/2-1-1_picture";
-import Picture_3 from "./components/3-1_picture";
 import Ai from "./components/3-1-1_ai";
 import Self from "./components/3-2-1_self";
 import PctResult from "./components/3-3_result";
