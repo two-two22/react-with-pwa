@@ -1,4 +1,5 @@
-body {
+/* .없이 이름만 있으면 tag 선택자이고, . 달린 애는 class 선택자. class 선택자가 우선순위 높음 */
+body { 
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

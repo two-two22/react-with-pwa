@@ -1,8 +1,11 @@
 .App {
+  font-family: 'Vogue', 'Times New Roman', Times, serif;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  letter-spacing: -4px;
+  transform: scaleY(1.08);
 }
 
 .App-logo {
