@@ -13,7 +13,7 @@ import Picture_2 from "./components/2-1-1_picture";
 import Picture_3 from "./components/3-1_picture";
 import Ai from "./components/3-1-1_ai";
 import Self from "./components/3-2-1_self";
-import Personal_color_result from "./components/Personal_color_result";
+import PctResult from "./components/3-3_result";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           <Route path="3-1_picture" element={<Picture_3 />} />
           <Route path="3-1-1_ai" element={<Ai />} />
           <Route path="3-2-1_self" element={<Self />} />
-          <Route path="Personal_color_result" element={<Personal_color_result />} />
+          <Route path="3-3_result" element={<PctResult />} />
         </Routes>
       </BrowserRouter>
     </div>

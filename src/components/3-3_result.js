@@ -1,13 +1,14 @@
 import React from "react";
+import {useState} from "react"
 // import { Link } from "react-router-dom";
 
 function PctResult() {
   const [personal_color,set_personal_color]=useState('Spring\nLight');
   return(      
       <div>
-        <h1>´ç½ÅÀÇ ÆÛ½º³Î ÄÃ·¯´Â .... </h1>
-        {personal_color}ÀÔ´Ï´Ù.
-        <h2>¾îÂ¼±¸ ¼³¸í</h2>
+        <h1>í¼ìŠ¤ë„ì»¬ëŸ¬ .... </h1>
+        {personal_color}ì…ë‹ˆë‹¤.
+        <h2>ì„¤ëª…</h2>
       </div>
   )
 }
