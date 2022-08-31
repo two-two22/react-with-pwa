@@ -55,7 +55,7 @@ function Dropzone(props) {
     ]);
     
     const sendImgToServer = (e) => {
-        axios.defaults.baseURL = "http://localhost:4000/";
+        axios.defaults.baseURL = "http://localhost:3002/";
         axios.defaults.withCredentials = true; // withCredentials 전역 설정
         // 사용자가 올린 정보를 확인해야 하므로 일단 서버로 전송합니다.
         // 제목 같은 건 폼을 제출한 이후에 달아주도록 합시다.
