@@ -1,3 +1,7 @@
+# Clone 후 잊으면 안되는 것
+
+node_modules 폴더가 생성되어 있지 않으므로 pakage-lock.json 을 지우고 `npm install` 혹은 `yarn add`를 실행할 것.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
