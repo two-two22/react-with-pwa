@@ -12,8 +12,8 @@ function Mainpage() {
         }}>
         ABOUT<br/>ME
       </p>
-      <p><Link to="/2-1_picture">나의 얼굴 분석하러 가기</Link></p>
-      <p><Link to="/3-1_picture">퍼스널컬러 분석하러 가기</Link></p>
+      <p><Link to="/2-1-1_picture">나의 얼굴 분석하러 가기</Link></p>
+      <p><Link to="/3_pct_choice">퍼스널컬러 분석하러 가기</Link></p>
     </div>
   );
 }

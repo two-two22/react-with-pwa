@@ -5,8 +5,8 @@ import Spinner from "./assets/loading.png";
 export default () => {
   return (
     <Background>
-      <LoadingText>Àá½Ã¸¸ ±â´Ù·Á ÁÖ¼¼¿ä.</LoadingText>
-      <img src={Spinner} alt="·ÎµùÁß" width="5%" />
+      <LoadingText>ï¿½ï¿½Ã¸ï¿½ ï¿½ï¿½Ù·ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½.</LoadingText>
+      <img src={Spinner} alt="ï¿½Îµï¿½ï¿½ï¿½" width="5%" />
     </Background>
   );
 };

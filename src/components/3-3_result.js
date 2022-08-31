@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 
 function PctResult() {
-  return <div>°á°ú È­¸é</div>;
+  return <div>ï¿½ï¿½ï¿½ È­ï¿½ï¿½</div>;
 }
 
 export default PctResult;

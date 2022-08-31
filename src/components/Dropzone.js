@@ -1,6 +1,7 @@
 import React, {useMemo, useState, useEffect} from 'react';
 import {useDropzone} from 'react-dropzone';
 import axios from 'axios';
+import Spinner from '../assets/spinner.gif';
 
 const baseStyle = {
   flex: 1,
@@ -31,8 +32,8 @@ const rejectStyle = {
   borderColor: '#ff1744'
 };
 
-function Dropzone(props) {
 
+function Dropzone(props) {
     const {
         acceptedFiles,
         getRootProps,
@@ -42,6 +43,8 @@ function Dropzone(props) {
         isDragReject,
         isDragActive,
     } = useDropzone({accept: {'image/*': []}});
+    const [loading, setLoading] = useState(false);
+
 
     const style = useMemo(() => ({
         ...baseStyle,
@@ -81,7 +84,7 @@ function Dropzone(props) {
         // oReq.open("POST", "/reservation/api/reservations/"+reservationInfoId+"/comments",true);
         // oReq.send(formData);
 
-        axios.post("http://localhost:4000/uploads", formData, config).then((res) => {
+        axios.post("http://localhost:4000/api/uploads", formData, config).then((res) => {
             console.log("file sended");
             console.log(res);
         }).catch(error => {
@@ -96,12 +99,23 @@ function Dropzone(props) {
         preview.readAsDataURL(e.target.files[0]);
     };
 
+    const getResult = (e) => {
+        setLoading(true);
+        e.preventDefault();
+        axios.get('http://localhost:4000/api/python_process').then(function(response){
+            console.log("데이터 확인만 %j", response.data);
+            //alert( JSON.stringify(response.data) );
+        }).catch(function(error){
+            console.log("실패");
+        });
+        setLoading(false);
+    };
+
     const files = acceptedFiles.map(file => (
         <li key={file.path}>
             {file.path} - {file.size} bytes
         </li>
     ));
-
     return (
         <section className="container">
         {/* <form encType="multipart/form-data" method="post" type='file'>
@@ -113,13 +127,12 @@ function Dropzone(props) {
         </form> */}
         <form encType="multipart/form-data" method="post" type='file'>
                 <input accept="image/*" type="file" onChange={sendImgToServer} name="img" id="user_face_img"/>
-                <button type="submit">내 얼굴형 분석하기</button>
+                <button type="submit" onClick={getResult}>내 얼굴형 분석하기</button>
         </form>
-        <aside>
-            <h4>Files</h4>
-            <ul>{files}</ul>
-            <img id="user_image" src="#" alt="" />
-        </aside>
+        <div>
+            {loading ? <img src={Spinner} alt="로딩중" width="5%" /> : <img id="user_image" src="#" alt="" style={{maxWidth:'300px'}}/>}
+            
+        </div>
         </section>
     );
 }
