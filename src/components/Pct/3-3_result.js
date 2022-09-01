@@ -15,12 +15,12 @@ import Container from "@mui/material/Container";
 
 import spring_bright_color from "../../photo/spring_bright_color.png";
 import spring_light_color from "../../photo/spring_light_color.png";
-// import summer_light_color from "../../photo/summer_light_color.png";
-// import summer_mute_color from "../../photo/summer_mute_color.png";
-// import autumn_mute_color from "../../photo/autumn_mute_color.png";
-// import autumn_deep_color from "../../photo/autumn_deep_color.png";
-// import winter_deep_color from "../../photo/winter_deep_color.png";
-// import winter_bright_color from "../../photo/winter_bright_color.png";
+import summer_light_color from "../../photo/summer_light_color.png";
+import summer_mute_color from "../../photo/summer_mute_color.png";
+import autumn_mute_color from "../../photo/autumn_mute_color.png";
+import autumn_deep_color from "../../photo/autumn_deep_color.png";
+import winter_deep_color from "../../photo/winter_deep_color.png";
+import winter_bright_color from "../../photo/winter_bright_color.png";
 
 function PctResult() {
   console.log("pctresult");
@@ -42,8 +42,8 @@ function PctResult() {
       <img
         alt="spring_bright"
         src={spring_bright_color}
-        height="300"
-        width="200"
+        height="200"
+        width="300"
         border-radius="30px"
       />
     ),
@@ -51,8 +51,62 @@ function PctResult() {
       <img
         alt="face_2"
         src={spring_light_color}
-        height="300"
-        width="200"
+        height="200"
+        width="300"
+        border-radius="30px"
+      />
+    ),
+    summer_light: (
+      <img
+        alt="summer_light"
+        src={summer_light_color}
+        height="200"
+        width="300"
+        border-radius="30px"
+      />
+    ),
+    summer_mute: (
+      <img
+        alt="summer_mute"
+        src={summer_mute_color}
+        height="200"
+        width="300"
+        border-radius="30px"
+      />
+    ),
+    autumn_mute: (
+      <img
+        alt="autumn_mute"
+        src={autumn_mute_color}
+        height="200"
+        width="300"
+        border-radius="30px"
+      />
+    ),
+    autumn_deep: (
+      <img
+        alt="autumn_deep"
+        src={autumn_deep_color}
+        height="200"
+        width="300"
+        border-radius="30px"
+      />
+    ),
+    winter_deep: (
+      <img
+        alt="winter_deep"
+        src={winter_deep_color}
+        height="200"
+        width="300"
+        border-radius="30px"
+      />
+    ),
+    winter_bright: (
+      <img
+        alt="winter_bright"
+        src={winter_bright_color}
+        height="200"
+        width="300"
         border-radius="30px"
       />
     ),
