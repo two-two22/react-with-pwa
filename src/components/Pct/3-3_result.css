@@ -1,0 +1,18 @@
+.header {    
+    color:#2679C2;
+    text-decoration: underline;
+ }
+
+#personal_color{
+    font-weight: bold;
+}
+
+.quotation_mark{
+    font-size: 80px;
+    color:#2679C2;
+}
+
+#avatar{
+    position:absolute;
+    left:45%;
+}
