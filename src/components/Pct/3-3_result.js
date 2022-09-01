@@ -22,10 +22,10 @@ import autumn_deep_color from "../../photo/autumn_deep_color.png";
 import winter_deep_color from "../../photo/winter_deep_color.png";
 import winter_bright_color from "../../photo/winter_bright_color.png";
 
-import hair_spring from '../../photo/hair_spring.png'
-import hair_summer from '../../photo/hair_summer.png'
-import hair_autumn from '../../photo/hair_autumn.png'
-import hair_winter from '../../photo/hair_winter.png'
+import hair_spring from "../../photo/hair_spring.png";
+import hair_summer from "../../photo/hair_summer.png";
+import hair_autumn from "../../photo/hair_autumn.png";
+import hair_winter from "../../photo/hair_winter.png";
 
 
 import cos_spring_light from '../../photo/cos_spring_light.png'
@@ -50,7 +50,7 @@ function PctResult() {
   const [personal_color_keyword, set_personal_color_keyword] = useState("");
   const [personal_color_color, set_personal_color_color] = useState("");
   const [personal_color_hair, set_personal_color_hair] = useState("");
-  const [personal_color_hair_exp, set_personal_color_hair_exp]=useState("");
+  const [personal_color_hair_exp, set_personal_color_hair_exp] = useState("");
   const [personal_color_cos, set_personal_color_cos] = useState("");
   const [personal_color_star, set_personal_color_star] = useState("");
 
@@ -152,9 +152,9 @@ function PctResult() {
             "오렌지계열의 쿠퍼브라운이나 옐로계열의 골드브라운, 밀크브라운을 추천한다. \n피부톤에 따라 색상의 밝고 어두운 정도를 조절하되 푸른계열과 녹색계열의 색상은 피한다."
           )
           set_personal_color_cos(cos_spring_bright);
-          
         });
-      } else {
+  }
+       else {
         useEffect(() => {
           result = "spring_light";
           set_personal_color("봄 웜 라이트");
@@ -191,7 +191,7 @@ function PctResult() {
           )
           set_personal_color_cos(cos_summer_light)
         });
-      } else {
+      }else {
         useEffect(() => {
           result = "summer_mute";
           set_personal_color("여름 쿨 뮤트");
@@ -207,7 +207,6 @@ function PctResult() {
             "애쉬계열의 애쉬블론드, 애쉬브라운이나 와인브라운, 내추럴블랙, 브라운블랙을 추천한다. 노란계열의 색상은 피한다."
           )
           set_personal_color_cos(cos_summer_mute)
-
         });
       }
       break;
@@ -228,7 +227,6 @@ function PctResult() {
             "골드색상을 기본으로 한 골드브라운과 다크브라운이 가장 잘 어울린다. 초록, 빨강계열의 색은 피하는게 좋다."
           )
           set_personal_color_cos(cos_autumn_mute);
-
         });
       } else {
         useEffect(() => {
@@ -267,9 +265,8 @@ function PctResult() {
             "블랙색상을 기본으로 한 브라운블랙, 블루블랙이나 다크브라운, 버건디를 추천한다. 골드계열이나 흐린 색은 피한다."
           )
           set_personal_color_cos(cos_winter_deep)
-
         });
-      } else {
+      }else {
         useEffect(() => {
           result = "winter_bright";
           set_personal_color("겨울 쿨 브라이트");
@@ -311,11 +308,11 @@ function PctResult() {
 
       <div>
         <h1 id="personal_color">
-          <span className="quotation_mark">"</span>
+          <span className="quotation_mark">" </span>
 
           {personal_color}
 
-          <span className="quotation_mark">"</span>
+          <span className="quotation_mark"> "</span>
         </h1>
       </div>
 
@@ -324,10 +321,15 @@ function PctResult() {
           <CssBaseline />
           <Container maxWidth="sm">
             <Box
-              sx={{ bgcolor: "#cfe8fc", height: "30vh", borderRadius: "16px" }}
+              sx={{
+                bgcolor: "#cfe8fc",
+                height: "30vh",
+                borderRadius: "16px",
+                padding: "4%",
+              }}
             >
               <br />
-              {personal_color_exp}
+              <p className="body">{personal_color_exp}</p>
             </Box>
           </Container>
         </React.Fragment>
@@ -336,7 +338,7 @@ function PctResult() {
       <br />
 
       <h2 className="header">AI가 추천하는 나의 키워드</h2>
-      <div>{personal_color_keyword}</div>
+      <div className="body">{personal_color_keyword}</div>
       <br />
 
       <h2 className="header">나와 어울리는 색상</h2>
@@ -344,8 +346,10 @@ function PctResult() {
       <br />
 
       <h2 className="header">추천하는 헤어</h2>
-      <div><img src={personal_color_hair} alt="no_hair_image" width="350"></img></div>
-      <div>{personal_color_hair_exp}</div>
+      <div>
+        <img src={personal_color_hair} alt="no_hair_image" width="350"></img>
+      </div>
+      <div className="body">{personal_color_hair_exp}</div>
       <br />
 
       <h2 className="header">추천하는 화장품</h2>

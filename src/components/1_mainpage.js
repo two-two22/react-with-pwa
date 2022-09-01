@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./1_mainpage.css";
 
 function Mainpage() {
   return (
     <div>
       <p
+        id="title"
         style={{
-          fontSize: 50,
+          fontSize: 60,
           color: "#216BAD",
           letterSpacing: "-1px" /* 자간 늘리거나 줄이기 */,
           scale: "1 1.18",

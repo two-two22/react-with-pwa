@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "vogue";
+  src: url("../assets/fonts/Vogue.ttf");
+}
+
+@font-face {
+  font-family: "notosans";
+  src: url(../assets/fonts/NotoSansKR-Light.otf);
+}
+
+#title {
+  font-family: "vogue";
+  /* font-weight: bold; */
+}
