@@ -5,7 +5,6 @@ import Dropzone from "./Dropzone";
 function Picture() {
   return (
     <div>
-      <p>사진 업로드</p>
       <Dropzone/>
     </div>
   );

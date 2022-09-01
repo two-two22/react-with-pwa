@@ -17,7 +17,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_face_mesh = mp.solutions.face_mesh
 # 가중치와 옵티마이저를 포함하여 정확히 동일한 모델을 다시 생성합니다
-model = tf.keras.models.load_model('python/face-model.h5')
+model = tf.keras.models.load_model('python/face_shape/face-model.h5')
 
 # 모델 구조를 출력합니다
 # new_model.summary()
@@ -42,7 +42,7 @@ with mp_face_mesh.FaceMesh(
         refine_landmarks=True,
         min_detection_confidence=0.5) as face_mesh:
     results = face_mesh.process(cv2.cvtColor(your_face, cv2.COLOR_BGR2RGB))
-    black_image = cv2.imread('python/black.jpeg')
+    black_image = cv2.imread('python/face_shape/black.jpeg')
     black_image = cv2.resize(
         black_image, (your_face_size[1], your_face_size[0]))
     for face_landmarks in results.multi_face_landmarks:
@@ -85,12 +85,12 @@ y_predict = model.predict(x_test)
 # print(y_predict[0].argmax())  # 0
 label = categories[y_predict[0].argmax()]
 confidence = y_predict[0][y_predict[0].argmax()]
-print('얼굴상: {}'.format(label))
+print(label)
 
 # test_images = labels[y_predict[0].argmax()]
 # test_labels = y_predict[0][y_predict[0].argmax()]
 # loss, acc = model.evaluate(test_images, test_labels, verbose=2)
-print('정확도: {:5.2f}%'.format(100*confidence))
+print(100*confidence)
 # print(label, confidence)
 
 # 모델의 시각화

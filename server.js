@@ -74,7 +74,7 @@ app.get('/api/python_process', function(req, res) {
     scriptPath: '',
     args: ['value1', 'value2', 'value3']
   };
-  PythonShell.PythonShell.run('python/test.py', options, function (err, results) {
+  PythonShell.PythonShell.run('python/face_shape/test.py', options, function (err, results) {
     if (err) throw err;
     console.log( results );
     res.send({result: results});
