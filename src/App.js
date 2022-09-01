@@ -6,9 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Mainpage from "./components/1_mainpage";
 import PctChoice from "./components/3_pct_choice";
 import Picture_2 from "./components/2-1-1_picture";
-import Ai from "./components/3-1-1_ai";
 import Picture_3 from "./components/3-1-2_picture";
-import Self from "./components/3-2-1_self";
 import PctResult from "./components/Pct/3-3_result";
 import PctSelect from "./components/Pct/3-2-2_selecting";
 import PctSelect2 from "./components/Pct/3-2-3_selecting";
@@ -21,11 +19,9 @@ function App() {
           <Route path="/" element={<Mainpage />} />
           <Route path="2-1-1_picture" element={<Picture_2 />} />
           <Route path="3_pct_choice" element={<PctChoice />} />
-          <Route path="3-1-1_ai" element={<Ai />} />
           <Route path="3-1-2_picture" element={<Picture_3 />} />
-          <Route path="3-2-1_self" element={<Self />} />
-          <Route path="3-2-2_selecting" element={<PctSelect/>} />
-          <Route path="3-2-3-selecting" element={<PctSelect2/>}/>
+          <Route path="3-2-2_selecting" element={<PctSelect />} />
+          <Route path="3-2-3_selecting" element={<PctSelect2 />} />
           <Route path="3-3_result" element={<PctResult />} />
         </Routes>
       </BrowserRouter>
