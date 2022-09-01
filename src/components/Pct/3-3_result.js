@@ -22,10 +22,10 @@ import autumn_deep_color from "../../photo/autumn_deep_color.png";
 import winter_deep_color from "../../photo/winter_deep_color.png";
 import winter_bright_color from "../../photo/winter_bright_color.png";
 
-import hair_spring from '../../photo/hair_spring.png'
-import hair_summer from '../../photo/hair_summer.png'
-import hair_autumn from '../../photo/hair_autumn.png'
-import hair_winter from '../../photo/hair_winter.png'
+import hair_spring from "../../photo/hair_spring.png";
+import hair_summer from "../../photo/hair_summer.png";
+import hair_autumn from "../../photo/hair_autumn.png";
+import hair_winter from "../../photo/hair_winter.png";
 
 function PctResult() {
   console.log("pctresult");
@@ -39,7 +39,7 @@ function PctResult() {
   const [personal_color_keyword, set_personal_color_keyword] = useState("");
   const [personal_color_color, set_personal_color_color] = useState("");
   const [personal_color_hair, set_personal_color_hair] = useState("");
-  const [personal_color_hair_exp, set_personal_color_hair_exp]=useState("");
+  const [personal_color_hair_exp, set_personal_color_hair_exp] = useState("");
   const [personal_color_cos, set_personal_color_cos] = useState("");
   const [personal_color_star, set_personal_color_star] = useState("");
 
@@ -139,7 +139,7 @@ function PctResult() {
           set_personal_color_hair(hair_spring);
           set_personal_color_hair_exp(
             "오렌지계열의 쿠퍼브라운이나 옐로계열의 골드브라운, 밀크브라운을 추천한다. \n피부톤에 따라 색상의 밝고 어두운 정도를 조절하되 푸른계열과 녹색계열의 색상은 피한다."
-          )
+          );
         });
       } else {
         useEffect(() => {
@@ -155,8 +155,7 @@ function PctResult() {
           set_personal_color_hair(hair_spring);
           set_personal_color_hair_exp(
             "오렌지계열의 쿠퍼브라운이나 옐로계열의 골드브라운, 밀크브라운을 추천한다.\n 피부톤에 따라 색상의 밝고 어두운 정도를 조절하되 푸른계열과 녹색계열의 색상은 피한다."
-          )
-
+          );
         });
       }
       break;
@@ -175,7 +174,7 @@ function PctResult() {
           set_personal_color_hair(hair_summer);
           set_personal_color_hair_exp(
             "애쉬계열의 애쉬블론드, 애쉬브라운이나 와인브라운, 내추럴블랙, 브라운블랙을 추천한다. 노란계열의 색상은 피한다."
-          )
+          );
         });
       } else {
         useEffect(() => {
@@ -191,8 +190,7 @@ function PctResult() {
           set_personal_color_hair(hair_summer);
           set_personal_color_hair_exp(
             "애쉬계열의 애쉬블론드, 애쉬브라운이나 와인브라운, 내추럴블랙, 브라운블랙을 추천한다. 노란계열의 색상은 피한다."
-          )
-
+          );
         });
       }
       break;
@@ -211,8 +209,7 @@ function PctResult() {
           set_personal_color_hair(hair_autumn);
           set_personal_color_hair_exp(
             "골드색상을 기본으로 한 골드브라운과 다크브라운이 가장 잘 어울린다. 초록, 빨강계열의 색은 피하는게 좋다."
-          )
-
+          );
         });
       } else {
         useEffect(() => {
@@ -228,8 +225,7 @@ function PctResult() {
           set_personal_color_hair(hair_autumn);
           set_personal_color_hair_exp(
             "골드색상을 기본으로 한 골드브라운과 다크브라운이 가장 잘 어울린다. 초록, 빨강계열의 색은 피하는게 좋다."
-          )
-
+          );
         });
       }
       break;
@@ -248,8 +244,7 @@ function PctResult() {
           set_personal_color_hair(hair_winter);
           set_personal_color_hair_exp(
             "블랙색상을 기본으로 한 브라운블랙, 블루블랙이나 다크브라운, 버건디를 추천한다. 골드계열이나 흐린 색은 피한다."
-          )
-
+          );
         });
       } else {
         useEffect(() => {
@@ -265,8 +260,7 @@ function PctResult() {
           set_personal_color_hair(hair_winter);
           set_personal_color_hair_exp(
             "블랙색상을 기본으로 한 브라운블랙, 블루블랙이나 다크브라운, 버건디를 추천한다. 골드계열이나 흐린 색은 피한다."
-          )
-
+          );
         });
       }
       break;
@@ -331,8 +325,10 @@ function PctResult() {
       <br />
 
       <h2 className="header">추천하는 헤어</h2>
-      <div><img src={personal_color_hair} alt="no_hair_image" width="350"></img></div>
-      <div>{personal_color_hair_exp}</div>
+      <div>
+        <img src={personal_color_hair} alt="no_hair_image" width="350"></img>
+      </div>
+      <div className="body">{personal_color_hair_exp}</div>
       <br />
 
       <h2 className="header">추천하는 화장품</h2>
