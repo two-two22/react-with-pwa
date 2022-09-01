@@ -1,18 +1,33 @@
-.header {    
-    color:#2679C2;
-    text-decoration: underline;
- }
+@charset "utf-8";
 
-#personal_color{
-    font-weight: bold;
+@font-face {
+  font-family: "notosans";
+  src: url("../../assets/fonts/NotoSansKR-Light.otf");
 }
 
-.quotation_mark{
-    font-size: 80px;
-    color:#2679C2;
+.header {
+  color: #2679c2;
+  font-family: "notosans";
+  text-decoration: underline;
 }
 
-#avatar{
-    position:absolute;
-    left:45%;
+#personal_color {
+  font-family: "notosans";
+  font-weight: bold;
+}
+
+.quotation_mark {
+  font-size: 80px;
+  color: #2679c2;
+}
+
+#avatar {
+  position: absolute;
+  left: 46%;
+}
+
+.body {
+  font-family: "notosans";
+  font-weight: bold;
+  font-size: large;
 }

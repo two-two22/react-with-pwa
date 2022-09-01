@@ -249,11 +249,11 @@ function PctResult() {
 
       <div>
         <h1 id="personal_color">
-          <span className="quotation_mark">"</span>
+          <span className="quotation_mark">" </span>
 
           {personal_color}
 
-          <span className="quotation_mark">"</span>
+          <span className="quotation_mark"> "</span>
         </h1>
       </div>
 
@@ -262,10 +262,15 @@ function PctResult() {
           <CssBaseline />
           <Container maxWidth="sm">
             <Box
-              sx={{ bgcolor: "#cfe8fc", height: "30vh", borderRadius: "16px" }}
+              sx={{
+                bgcolor: "#cfe8fc",
+                height: "30vh",
+                borderRadius: "16px",
+                padding: "4%",
+              }}
             >
               <br />
-              {personal_color_exp}
+              <p className="body">{personal_color_exp}</p>
             </Box>
           </Container>
         </React.Fragment>
@@ -274,7 +279,7 @@ function PctResult() {
       <br />
 
       <h2 className="header">AI가 추천하는 나의 키워드</h2>
-      <div>{personal_color_keyword}</div>
+      <div className="body">{personal_color_keyword}</div>
       <br />
 
       <h2 className="header">나와 어울리는 색상</h2>

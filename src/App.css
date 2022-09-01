@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Vogue', 'Times New Roman', Times, serif;
+  font-family: "Vogue", "Times New Roman", Times, serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -41,4 +41,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: "notosans";
+  src: url("../src/assets/fonts/NotoSansKR-Regular.otf");
+  /* font-family: "gothic";
+  src: url("../src/assets/fonts/GothicA1-Medium.ttf"); */
+}
+
+* {
+  font-family: "notosans";
 }
