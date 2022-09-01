@@ -1,19 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Icon from "../photo/icon.png"
+import { AwesomeButton } from "react-awesome-button";
 
 function PctChoice() {
   return (
     <div>
-      <p>
-        <Link to="/3-1-2_picture" state={{ way: "ai" }}>
-          AI에게 분석 맡기기
+
+      <img src={Icon} alt="logo_icon" height="300" weight="250"></img><br/>
+      <div>
+        <p>
+        <Link to="/3-1-2_picture">
+          <AwesomeButton type="link">AI 퍼스널컬러 분석하기</AwesomeButton>
         </Link>
-      </p>
-      <p>
-        <Link to="/3-1-2_picture" state={{ way: "self" }}>
-          내가 직접 분석하기
-        </Link>
-      </p>
+        </p>
+
+        <p>
+          <Link to="/3-1-2_picture">
+            <AwesomeButton type="link">내가 직접 분석하기</AwesomeButton>
+          </Link>
+        </p>
+      </div>
     </div>
   );
 }

@@ -20,8 +20,8 @@ function App() {
           <Route path="2-1-1_picture" element={<Picture_2 />} />
           <Route path="3_pct_choice" element={<PctChoice />} />
           <Route path="3-1-2_picture" element={<Picture_3 />} />
-          <Route path="3-2-2_selecting" element={<PctSelect />} />
-          <Route path="3-2-3_selecting" element={<PctSelect2 />} />
+          <Route path="3-2-2_selecting" element={<PctSelect/>} />
+          <Route path="3-2-3-selecting" element={<PctSelect2/>}/>
           <Route path="3-3_result" element={<PctResult />} />
         </Routes>
       </BrowserRouter>
