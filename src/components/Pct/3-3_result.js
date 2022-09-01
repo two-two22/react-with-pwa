@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useLocation } from "react-router";
 import "./3-3_result.css";
@@ -13,18 +13,166 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 
+import spring_bright_color from "../../photo/spring_bright_color.png";
+import spring_light_color from "../../photo/spring_light_color.png";
+// import summer_light_color from "../../photo/summer_light_color.png";
+// import summer_mute_color from "../../photo/summer_mute_color.png";
+// import autumn_mute_color from "../../photo/autumn_mute_color.png";
+// import autumn_deep_color from "../../photo/autumn_deep_color.png";
+// import winter_deep_color from "../../photo/winter_deep_color.png";
+// import winter_bright_color from "../../photo/winter_bright_color.png";
+
 function PctResult() {
   console.log("pctresult");
-  const result = useLocation();
-  console.log(result);
+  const location = useLocation();
+  const season = location.state.season;
+  const tone = location.state.tone;
+  console.log(season);
 
-  const [personal_color, set_personal_color] = useState("가을 웜 딥");
-  const [personal_color_exp, set_personal_color_exp] = useState(
-    "어쩌구 어쩌구"
-  );
+  const [personal_color, set_personal_color] = useState("");
+  const [personal_color_exp, set_personal_color_exp] = useState("");
+  const [personal_color_keyword, set_personal_color_keyword] = useState("");
+  const [personal_color_color, set_personal_color_color] = useState("");
+  const [personal_color_hair, set_personal_color_hair] = useState("");
+  const [personal_color_cos, set_personal_color_cos] = useState("");
+  const [personal_color_star, set_personal_color_star] = useState("");
+
+  var Color = {
+    spring_bright: (
+      <img
+        alt="spring_bright"
+        src={spring_bright_color}
+        height="300"
+        width="200"
+        border-radius="30px"
+      />
+    ),
+    spring_light: (
+      <img
+        alt="face_2"
+        src={spring_light_color}
+        height="300"
+        width="200"
+        border-radius="30px"
+      />
+    ),
+  };
+
+  var result;
 
   // npm install react-awesome-button // 결과화면 버튼
   // npm install @mui/material @emotion/styled @emotion/react // 결과화면 사진
+
+  switch (season) {
+    case "spring":
+      if (tone === "first") {
+        useEffect(() => {
+          result = "spring_bright";
+          set_personal_color("봄 웜 브라이트");
+          set_personal_color_exp(
+            "봄 웜 브라이트는 선명하고 밝으며 흰 기가 많이 도는 순한 파스텔 톤으로, 상큼하고 또렷한 얼굴을 가지고 있다. 노란 베이스의 중명도~고명도, 고채도의 선명한 색상이다. 화사하며 생동감과 에너지를 느끼게 하며, 눈에 잘 띈다. 고명도, 고채도의 색감이 잘 어울리나 차갑고 텁텁한 느낌의 색감은 얼굴을 칙칙하게 만들 수 있다는 점을 주의해야 한다."
+          );
+          set_personal_color_keyword(
+            "#걸리쉬한, #순한, #생기넘치는 #여리여리한 #부드러운 #귀여운 #따듯한"
+          );
+          set_personal_color_color(result);
+        });
+      } else {
+        useEffect(() => {
+          result = "spring_light";
+          set_personal_color("봄 웜 라이트");
+          set_personal_color_exp(
+            "봄 웜 라이트는 따듯한 유형으로, 선명하고 밝으며 흰 기가 많이 도는 파스텔 톤이다. 맑고 생기있는 피부톤을 가지고 있으며, 가볍고 순한 느낌을 줄 수 있다. 봄 웜 라이트는 노란 베이스의 부드러운 색과 잘 어울리며, 흰 색이 섞인 고명도의 색상과 매치했을 때 가장 잘 어울린다. 하지만, 블랙-화이트처럼 극단적인 느낌의 대비감은 소화하기 힘들 수 있다."
+          );
+          set_personal_color_keyword(
+            "#밝은 #생기넘치는 #발랄한 #선명한 #귀여운 #로맨틱한 #따뜻한"
+          );
+          set_personal_color_color(result);
+        });
+      }
+      break;
+    case "summer":
+      if (tone === "first") {
+        useEffect(() => {
+          result = "summer_light";
+          set_personal_color("여름 쿨 라이트");
+          set_personal_color_exp(
+            "여름 쿨 라이트는 싱그럽고 밝고 투명한 피부를 가지고 있으며, 흰색이나 연하고 밝은 회색이 섞여 싱싱한 느낌을 준다. 대체로 고명도의 은은한 파스텔 톤과, 부드럽고 맑은 색감이 잘 어울리며, 흰색의 옷을 입었을 때 깔끔한 여름 쿨 라이트 특유의 느낌이 살아나고 은은한 광채도 느낄 수 있다. 다만, 인위적인 느낌을 소화하기 힘들 수 있으니 검은색 보다는 부드러운 먹색이나 차콜과 같은 색을 추천한다."
+          );
+          set_personal_color_keyword(
+            "#엘레강스한, #맑은, #싱그러운, #시원한, #깨끗한, #은은한, #청량한"
+          );
+          set_personal_color_color(result);
+        });
+      } else {
+        useEffect(() => {
+          result = "summer_mute";
+          set_personal_color("여름 쿨 뮤트");
+          set_personal_color_exp(
+            "여름 쿨 뮤트는 명도가 낮아 눈이 피곤하지 않은 은은한 느낌을 준다. 대체로 회색기가 많이 섞인 톤 다운된 파스텔 계열의 색상이 잘 어울린다. 팔레트의 범위가 넓어 소화할 수 있는 색상이 풍부하다는 장점이 있고, 탁색의 옷을 입었을 때 성숙해보이는 특유한 느낌이 살아나 차분한 무드를 낼 수 있다. 다만 여름 쿨 뮤트는 검은색과 같이 어두운 색을 사용하면 피곤해보이는 인상을 줄 수 있으므로 어두운 색을 사용하고 싶다면 흰 기가 들어간 색을 사용하는 것을 추천한다.  "
+          );
+          set_personal_color_keyword(
+            "#청초한, #분위기있는, #시원한, #깨끗한, #우아한, #세련된, #차분한"
+          );
+          set_personal_color_color(result);
+        });
+      }
+      break;
+    case "autumn":
+      if (tone === "first") {
+        useEffect(() => {
+          result = "autumn_mute";
+          set_personal_color("가을 웜 뮤트");
+          set_personal_color_exp(
+            "가을 웜 뮤트는 차분하고 무거운 분위기의 부드러운 색상으로, 대체적으로 고급스러우면서도 편안한 느낌을 가지고 있다. 가을 웜 뮤트는 전반적으로 톤 다운되어있으면서도 너무 어둡지는 않은 색상이 가장 잘 어울린다. 밝은 카키, 올리브, 인디코랄, 아이보리 색상이 베스트 컬러이며, 쨍한 오렌지나 진한 빨간 색의 컬러는 피하는 것이 좋다."
+          );
+          set_personal_color_keyword(
+            " #클래식한, #따뜻한 #부드러운 #유연한 #그윽한 #편안한 #차분한"
+          );
+          set_personal_color_color(result);
+        });
+      } else {
+        useEffect(() => {
+          result = "autumn_deep";
+          set_personal_color("가을 웜 딥");
+          set_personal_color_exp(
+            "가을 웜 딥은 저명도의 어둡고 음영 있는 색이 잘 어울리는 타입이다. 이 타입은 고급스럽고 안정된 에너지를 갖고 있다. 옅은 색부터 깊은 색까지 모두 어울려 ‘색조의 여왕’이라고 불리기도 하지만, 흰 빛이 섞인 파스텔 톤은 소화하기 힘들 수 있다."
+          );
+          set_personal_color_keyword(
+            "#클래식한, #고져스한, #깊은,#그윽한, #고급스러운"
+          );
+          set_personal_color_color(result);
+        });
+      }
+      break;
+    case "winter":
+      if (tone === "first") {
+        useEffect(() => {
+          result = "winter_deep";
+          set_personal_color("겨울 쿨 딥");
+          set_personal_color_exp(
+            "겨울 쿨 딥은 하얀 스킨톤 덕분에 시크하고 도도한 매력을 풍긴다. 겨울 쿨 딥은 저채도, 저명도의 어둡고 진한 색으로, 흰 빛이 섞인 파스텔 톤보다는 진한 레드나 블랙이 섞인 어두운 컬러와 무게감이 있는 깊은 색감이 잘 어울린다. 검은색이 잘 어울리는 타입으로, 올블랙도 고급지고 세련되게 소화할 수 있다. 다만 회색기가 돌거나 따뜻한 컬러는 연출이 어렵다. 또한 탁하거나 노란기가 많이 섞인 색상은 얼굴과 조화되지 못하여 안색을 칙칙하게 만들 수 있다. 올리브, 오렌지, 코랄 등 주황빛이 들어간 색을 사용할 경우 얼굴의 잡티나 주름이 부각되고, 자칫하면 피곤한 인상을 줄 수 있다."
+          );
+          set_personal_color_keyword(
+            "#시크한, #모던한, #깊은, #도도한, #그윽한"
+          );
+          set_personal_color_color(result);
+        });
+      } else {
+        useEffect(() => {
+          result = "winter_bright";
+          set_personal_color("겨울 쿨 브라이트");
+          set_personal_color_exp(
+            "겨울 쿨 브라이트는 화사하고 정적인 에너지를 가지고 있으며, 하얗고 맑은 피부톤을 가지고 있다. 고채도의 원색에 가까운 쨍한 색이 잘 어울리는 타입이다. 형광펜을 연상시킬 정도의 밝은색과 잘 맞으며, 액세서리나 검은 머리카락 등의 포인트 디테일로 대비감을 주면 좋다. 다만 탁하거나 노란 기가 많이 섞인 색상은 얼굴과 조화되지 못하여 색만 둥둥 떠보이게 하거나 안색을 칙칙하게 만들 수 있다. 또한 코랄, 오렌지, 골드 등 주황빛이 들어간 색상은 얼굴의 잡티와 주름이 부각되어 보이게하고 자칫하면 피곤한 인상을 줄 수 있다."
+          );
+          set_personal_color_keyword(
+            "#시크한, #모던한, #선명한, #맑은, #과감한, #희귀한, #시원한"
+          );
+          set_personal_color_color(result);
+        });
+      }
+      break;
+  }
 
   return (
     <>
@@ -63,10 +211,7 @@ function PctResult() {
               sx={{ bgcolor: "#cfe8fc", height: "30vh", borderRadius: "16px" }}
             >
               <br />
-              ‘가을 웜 딥 톤’은 저명도의 어둡고 음영 있는 색이 잘 어울리는
-              타입이다. 이 타입은 고급스럽고 안정된 에너지를 갖고 있다. 옅은
-              색부터 깊은 색까지 모두 어울려 ‘색조의 여왕’이라고 불리기도
-              하지만, 흰 빛이 섞인 파스텔 톤은 소화하기 힘들 수 있다.
+              {personal_color_exp}
             </Box>
           </Container>
         </React.Fragment>
@@ -75,9 +220,11 @@ function PctResult() {
       <br />
 
       <h2 className="header">AI가 추천하는 나의 키워드</h2>
+      <div>{personal_color_keyword}</div>
       <br />
 
       <h2 className="header">나와 어울리는 색상</h2>
+      <div className="photo">{Color[personal_color_color]}</div>
       <br />
 
       <h2 className="header">추천하는 헤어</h2>

@@ -25,10 +25,11 @@ var s = spring_light;
 
 function PctSelect_2() {
   console.log("pctselect2");
-  const season = useLocation();
+  const location = useLocation();
+  const season = location.state.season;
   console.log(season);
 
-  switch (season.state.season) {
+  switch (season) {
     case "spring":
       console.log("spring입니다");
       break;
@@ -38,7 +39,7 @@ function PctSelect_2() {
       s = summer_mute;
       break;
     case "autumn":
-      console.log("fall입니다");
+      console.log("autumn입니다");
       f = autumn_mute;
       s = autumn_deep;
       break;
@@ -83,10 +84,7 @@ function PctSelect_2() {
         </ToggleButtonGroup>
       </div>
       <br />
-      <Link
-        to="/3-3_result"
-        state={{ season: season.state.season, tone: alignment }}
-      >
+      <Link to="/3-3_result" state={{ season: season, tone: alignment }}>
         <AwesomeButton type="primary" value={alignment}>
           선택완료
         </AwesomeButton>
