@@ -32,7 +32,8 @@ image_h = 64
 pixels = image_w * image_h * 3
 
 # 내 얼굴 facemesh 씌우기
-your_face = cv2.imread('src/uploads/faceimage.jpg')
+your_face = cv2.imread(
+    '/Users/leesiha/Documents/3/비교과/two-two/react-with-pwa/src/uploads/faceimage.jpg')
 your_face_size = your_face.shape  # (height, width, channels) return
 
 drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)

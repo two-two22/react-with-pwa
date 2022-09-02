@@ -36,8 +36,6 @@ const localhost = "http://localhost:4000/";
 function Dropzone() {
     const [imgTo, setimgTo] = useState(null);
     const [loading, setLoading] = useState(false);
-    const [shape, setShape] = useState(null);
-    const [confidence, setConfidence] = useState(null);
     const navigate = useNavigate();
 
     const onDrop = useCallback((acceptedFiles) => {
@@ -102,8 +100,6 @@ function Dropzone() {
 
     useEffect(() => {
         setLoading();
-        setShape();
-        setConfidence();
     }, [])
 
     return (
