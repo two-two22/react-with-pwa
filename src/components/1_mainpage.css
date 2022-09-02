@@ -20,11 +20,11 @@
   color:darkslategrey;
 }
 
-hr{
-  color:darkslategrey;
-  width:300px;
-}
-
 #background{
   background-color: #acb9cb2d;
+}
+
+
+hr{
+  width:400px;
 }

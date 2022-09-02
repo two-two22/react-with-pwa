@@ -7,6 +7,7 @@ import { AwesomeButton } from "react-awesome-button";
 function Mainpage() {
   return (
     <div id="background">
+      <br/><hr></hr>
       <p
         id="title"
         style={{
