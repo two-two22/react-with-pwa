@@ -63,7 +63,7 @@ function PctSelect() {
   };
 
   return (
-    <>
+    <div id="background">
       <h2 className="header">
         가장 얼굴이 환해보이는 배경을 <br /> 하나만 선택해주세요
       </h2>
@@ -82,7 +82,7 @@ function PctSelect() {
           <ToggleButton value="winter">4</ToggleButton>
         </ToggleButtonGroup>
       </div>
-      <br />
+      <br /><br/>
       <Link to="/3-2-3_selecting" state={{ season: alignment }}>
         <AwesomeButton type="primary" value={alignment}>
           선택완료
@@ -90,7 +90,7 @@ function PctSelect() {
       </Link>
       <br />
       <br />
-    </>
+    </div>
   );
 }
 
