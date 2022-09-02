@@ -385,7 +385,7 @@ function PctResult() {
         * 조명에 따라서 결과가 다르게 나타날 수 있습니다
         <br />
         <br />
-      </p>
+      </p><br /><br />
 
       {/* <Link to="/3-1-2_picture" state={{ way: "ai" }}>
         <AwesomeButton type="secondary">AI 퍼스널컬러 분석하기</AwesomeButton>
@@ -403,13 +403,18 @@ function PctResult() {
         <AwesomeButton type="secondary">퍼스널컬러 분석하기</AwesomeButton>
       </Link>
       <br />
-      <br />
+      <br /><br />
 
       <Link to="/2-1-1_picture">
         <AwesomeButton type="secondary">나의 얼굴 분석하기</AwesomeButton>
       </Link>
-      <br />
-      <br />
+
+      <p id="twotwo">
+      <br/><br/><br/><br/>
+        <hr id="hr"></hr>
+        Made by 22
+      </p>
+
     </div>
   );
 }
