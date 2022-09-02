@@ -36,6 +36,16 @@ import cos_autumn_deep from "../../photo/cos_autumn_deep.png";
 import cos_winter_deep from "../../photo/cos_winter_deep.png";
 import cos_winter_bright from "../../photo/cos_winter_bright.png";
 
+import star_spring_light from "../../photo/star_spring_light.png"
+import star_spring_bright from "../../photo/star_spring_bright.png"
+import star_summer_light from "../../photo/star_summer_light.png"
+import star_summer_mute from "../../photo/star_summer_mute.png"
+import star_autumn_mute from "../../photo/star_autumn_mute.png"
+import star_autumn_deep from "../../photo/star_autumn_deep.png"
+import star_winter_deep from "../../photo/star_winter_deep.png"
+import star_winter_bright from "../../photo/star_winter_bright.png"
+
+
 function PctResult() {
   console.log("pctresult");
   const location = useLocation();
@@ -150,6 +160,7 @@ function PctResult() {
             "오렌지계열의 쿠퍼브라운이나 옐로계열의 골드브라운, 밀크브라운을 추천한다. \n피부톤에 따라 색상의 밝고 어두운 정도를 조절하되 푸른계열과 녹색계열의 색상은 피한다."
           );
           set_personal_color_cos(cos_spring_bright);
+          set_personal_color_star(star_spring_bright);
         });
       } else {
         useEffect(() => {
@@ -167,6 +178,7 @@ function PctResult() {
             "오렌지계열의 쿠퍼브라운이나 옐로계열의 골드브라운, 밀크브라운을 추천한다.\n 피부톤에 따라 색상의 밝고 어두운 정도를 조절하되 푸른계열과 녹색계열의 색상은 피한다."
           );
           set_personal_color_cos(cos_spring_light);
+          set_personal_color_star(star_spring_light);
         });
       }
       break;
@@ -187,6 +199,7 @@ function PctResult() {
             "애쉬계열의 애쉬블론드, 애쉬브라운이나 와인브라운, 내추럴블랙, 브라운블랙을 추천한다. 노란계열의 색상은 피한다."
           );
           set_personal_color_cos(cos_summer_light);
+          set_personal_color_star(star_summer_light);
         });
       } else {
         useEffect(() => {
@@ -204,6 +217,7 @@ function PctResult() {
             "애쉬계열의 애쉬블론드, 애쉬브라운이나 와인브라운, 내추럴블랙, 브라운블랙을 추천한다. 노란계열의 색상은 피한다."
           );
           set_personal_color_cos(cos_summer_mute);
+          set_personal_color_star(star_summer_mute);
         });
       }
       break;
@@ -224,6 +238,7 @@ function PctResult() {
             "골드색상을 기본으로 한 골드브라운과 다크브라운이 가장 잘 어울린다. 초록, 빨강계열의 색은 피하는게 좋다."
           );
           set_personal_color_cos(cos_autumn_mute);
+          set_personal_color_star(star_autumn_mute);
         });
       } else {
         useEffect(() => {
@@ -241,6 +256,7 @@ function PctResult() {
             "골드색상을 기본으로 한 골드브라운과 다크브라운이 가장 잘 어울린다. 초록, 빨강계열의 색은 피하는게 좋다."
           );
           set_personal_color_cos(cos_autumn_deep);
+          set_personal_color_star(star_autumn_deep);
         });
       }
       break;
@@ -261,6 +277,7 @@ function PctResult() {
             "블랙색상을 기본으로 한 브라운블랙, 블루블랙이나 다크브라운, 버건디를 추천한다. 골드계열이나 흐린 색은 피한다."
           );
           set_personal_color_cos(cos_winter_deep);
+          set_personal_color_star(star_winter_deep);
         });
       } else {
         useEffect(() => {
@@ -278,6 +295,7 @@ function PctResult() {
             "블랙색상을 기본으로 한 브라운블랙, 블루블랙이나 다크브라운, 버건디를 추천한다. 골드계열이나 흐린 색은 피한다."
           );
           set_personal_color_cos(cos_winter_bright);
+          set_personal_color_star(star_winter_bright);
         });
       }
       break;
@@ -355,6 +373,9 @@ function PctResult() {
       <br />
 
       <h2 className="header">같은 퍼스널컬러를 가진 연예인</h2>
+      <div>
+        <img src={personal_color_star} alt="no_star_image" width="450"></img>
+      </div>
       <br />
 
       <p>
