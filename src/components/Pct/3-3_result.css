@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "notosans";
+  src: url("../../assets/fonts/NotoSansKR-Light.otf");
+}
+
+.header {
+  color: #2679c2;
+  font-family: "notosans";
+  text-decoration: underline;
+}
+
+#personal_color {
+  font-family: "notosans";
+  font-weight: bold;
+}
+
+.quotation_mark {
+  font-size: 80px;
+  color: #2679c2;
+}
+
+#avatar {
+  position: absolute;
+  left: 46%;
+}
+
+.body {
+  word-break: normal;
+  font-family: "notosans";
+  font-weight: bold;
+  font-size: large;
+  margin: auto;
+}
+
+#hair {
+  word-break: normal;
+  font-family: "notosans";
+  font-weight: bold;
+  font-size: large;
+  width: 450px;
+  margin: auto;
+}
