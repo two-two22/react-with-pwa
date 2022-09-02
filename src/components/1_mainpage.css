@@ -14,3 +14,17 @@
   font-family: "vogue";
   /* font-weight: bold; */
 }
+#twotwo {
+  font-family: "vogue";
+  font-size:medium;
+  color:darkslategrey;
+}
+
+hr{
+  color:darkslategrey;
+  width:300px;
+}
+
+#background{
+  background-color: #acb9cb2d;
+}

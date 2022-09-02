@@ -6,7 +6,7 @@ import { AwesomeButton } from "react-awesome-button";
 
 function Mainpage() {
   return (
-    <div>
+    <div id="background">
       <p
         id="title"
         style={{
@@ -17,20 +17,27 @@ function Mainpage() {
         }}
       >
         ABOUT
-        <br />
+        <br /><br/>
         ME
-      </p>
+      </p><br/>
       <div>
       <Link to="/2-1-1_picture" >
         <AwesomeButton type="link">나의 얼굴 분석하러 가기</AwesomeButton>
       </Link>
-      </div><br/>
+      </div><br/><br/>
       
       <div>
       <Link to="/3_pct_choice" >
             <AwesomeButton type="link">퍼스널컬러 분석하러 가기</AwesomeButton>
       </Link>
       </div>
+
+
+      <p id="twotwo">
+      <br/><br/><br/><br/><br/>
+        <hr id="hr"></hr>
+        Made by 22
+      </p>
 
     </div>
   );
