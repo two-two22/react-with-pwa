@@ -23,7 +23,7 @@
 
 #avatar {
   position: absolute;
-  left: 46%;
+  left: 44.5%;
 }
 
 .body {
@@ -41,4 +41,8 @@
   font-size: large;
   width: 450px;
   margin: auto;
+}
+
+.makeBorder{
+  background-color:#acb9cb2d;
 }

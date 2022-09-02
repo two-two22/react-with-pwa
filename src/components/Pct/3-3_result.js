@@ -301,19 +301,19 @@ function PctResult() {
   }
 
   return (
-    <>
+    <div className="makeBorder">
       <h1 className="header">분석 결과</h1>
       <h2 className="header">퍼스널컬러 분석</h2>
-      <br />
       <br />
 
       <div>
         <Stack id="avatar">
           <Avatar
             src={require("../../photo/sekyung.jpg")}
-            sx={{ width: 120, height: 120, bgcolor: blue[700] }}
+            sx={{ width: 150, height: 150, bgcolor: blue[700] }}
           />
         </Stack>
+        <br/>
       </div>
       <br />
       <br />
@@ -347,6 +347,7 @@ function PctResult() {
           </Container>
         </React.Fragment>
       </div>
+      <br />
       <br />
       <br />
 
@@ -409,7 +410,7 @@ function PctResult() {
       </Link>
       <br />
       <br />
-    </>
+    </div>
   );
 }
 
