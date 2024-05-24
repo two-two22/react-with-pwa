@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "8e3ef2288637b8f21e15",
-    "url": "/react-with-pwa/static/css/main.66ff2b69.chunk.css"
+    "revision": "6a8733b3a2322a7536cf",
+    "url": "/react-with-pwa/static/css/main.ceb116e7.chunk.css"
   },
   {
-    "revision": "8e3ef2288637b8f21e15",
-    "url": "/react-with-pwa/static/js/main.8e3ef228.chunk.js"
+    "revision": "6a8733b3a2322a7536cf",
+    "url": "/react-with-pwa/static/js/main.6a8733b3.chunk.js"
   },
   {
     "revision": "8350b9eb958d55b7e207",
     "url": "/react-with-pwa/static/js/1.8350b9eb.chunk.js"
   },
   {
-    "revision": "227e5df7f3103a9d78d8",
-    "url": "/react-with-pwa/static/css/2.95b22fa9.chunk.css"
+    "revision": "0c982b5d9a26c1a32c60",
+    "url": "/react-with-pwa/static/css/2.73489f2a.chunk.css"
   },
   {
-    "revision": "227e5df7f3103a9d78d8",
-    "url": "/react-with-pwa/static/js/2.227e5df7.chunk.js"
+    "revision": "0c982b5d9a26c1a32c60",
+    "url": "/react-with-pwa/static/js/2.0c982b5d.chunk.js"
   },
   {
     "revision": "3b26f4cefd979a97315a",
@@ -212,7 +212,7 @@ self.__precacheManifest = [
     "url": "/react-with-pwa/static/media/output_winter_deep.80bffcc4.png"
   },
   {
-    "revision": "e219f6c803762e07260f7c8ede30efbe",
+    "revision": "87d05852502a7f3561ba4e3832457d52",
     "url": "/react-with-pwa/index.html"
   }
 ];
