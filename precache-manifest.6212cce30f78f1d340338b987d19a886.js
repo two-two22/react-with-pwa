@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "6a8733b3a2322a7536cf",
-    "url": "/react-with-pwa/static/css/main.ceb116e7.chunk.css"
+    "revision": "a014ec9a72312388bcff",
+    "url": "/react-with-pwa/static/css/main.d28f30db.chunk.css"
   },
   {
-    "revision": "6a8733b3a2322a7536cf",
-    "url": "/react-with-pwa/static/js/main.6a8733b3.chunk.js"
+    "revision": "a014ec9a72312388bcff",
+    "url": "/react-with-pwa/static/js/main.a014ec9a.chunk.js"
   },
   {
-    "revision": "8350b9eb958d55b7e207",
-    "url": "/react-with-pwa/static/js/1.8350b9eb.chunk.js"
+    "revision": "b837342be2e256521659",
+    "url": "/react-with-pwa/static/js/1.b837342b.chunk.js"
   },
   {
-    "revision": "0c982b5d9a26c1a32c60",
-    "url": "/react-with-pwa/static/css/2.73489f2a.chunk.css"
+    "revision": "5694ae3cb78a01735bc2",
+    "url": "/react-with-pwa/static/css/2.af95ea4d.chunk.css"
   },
   {
-    "revision": "0c982b5d9a26c1a32c60",
-    "url": "/react-with-pwa/static/js/2.0c982b5d.chunk.js"
+    "revision": "5694ae3cb78a01735bc2",
+    "url": "/react-with-pwa/static/js/2.5694ae3c.chunk.js"
   },
   {
-    "revision": "3b26f4cefd979a97315a",
-    "url": "/react-with-pwa/static/js/runtime~main.3b26f4ce.js"
+    "revision": "1a9d9a08f4cb7a515339",
+    "url": "/react-with-pwa/static/js/runtime~main.1a9d9a08.js"
   },
   {
     "revision": "546549379d9f953d4e39c8fae906a988",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/react-with-pwa/static/media/spinner.6d646945.gif"
   },
   {
-    "revision": "880c82fa49acb775ae04aef48b692b21",
-    "url": "/react-with-pwa/static/media/faceimage.880c82fa.jpg"
+    "revision": "a0bb063ba91c5a6360edff81d3277417",
+    "url": "/react-with-pwa/static/media/faceimage.a0bb063b.jpg"
   },
   {
     "revision": "8a6b74b80a80c3a5ac216999e2094db6",
@@ -192,6 +192,14 @@ self.__precacheManifest = [
     "url": "/react-with-pwa/static/media/output_summer_light.11471e61.png"
   },
   {
+    "revision": "764566c90588305cd6ead1589d6b7105",
+    "url": "/react-with-pwa/static/media/output_autumn_mute.764566c9.png"
+  },
+  {
+    "revision": "80bffcc4dad8c331fe281eb2935d757c",
+    "url": "/react-with-pwa/static/media/output_winter_deep.80bffcc4.png"
+  },
+  {
     "revision": "bf03b7bae151152c4000e2d11aedbd7b",
     "url": "/react-with-pwa/static/media/output_summer_mute.bf03b7ba.png"
   },
@@ -204,15 +212,7 @@ self.__precacheManifest = [
     "url": "/react-with-pwa/static/media/output_winter_bright.383c3044.png"
   },
   {
-    "revision": "764566c90588305cd6ead1589d6b7105",
-    "url": "/react-with-pwa/static/media/output_autumn_mute.764566c9.png"
-  },
-  {
-    "revision": "80bffcc4dad8c331fe281eb2935d757c",
-    "url": "/react-with-pwa/static/media/output_winter_deep.80bffcc4.png"
-  },
-  {
-    "revision": "87d05852502a7f3561ba4e3832457d52",
+    "revision": "077bfb53175c4b067f49b2bbfff0c293",
     "url": "/react-with-pwa/index.html"
   }
 ];
