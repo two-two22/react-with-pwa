@@ -1,7 +1,7 @@
 # 모델 시각화에 사용되는 모듈
-from keras.utils.vis_utils import model_to_dot
-from IPython.display import SVG
-import matplotlib.pyplot as plt
+# from keras.utils.vis_utils import model_to_dot
+# from IPython.display import SVG
+# import matplotlib.pyplot as plt
 
 import tensorflow as tf
 from PIL import Image
@@ -33,7 +33,7 @@ pixels = image_w * image_h * 3
 
 # 내 얼굴 facemesh 씌우기
 your_face = cv2.imread(
-    '/Users/leesiha/Documents/3/비교과/two-two/react-with-pwa/src/uploads/faceimage.jpg')
+    'src/uploads/faceimage.jpg')
 your_face_size = your_face.shape  # (height, width, channels) return
 
 drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
