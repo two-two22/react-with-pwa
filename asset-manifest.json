@@ -1,7 +1,7 @@
 {
   "main.css": "/react-with-pwa/static/css/main.d28f30db.chunk.css",
-  "main.js": "/react-with-pwa/static/js/main.a014ec9a.chunk.js",
-  "main.js.map": "/react-with-pwa/static/js/main.a014ec9a.chunk.js.map",
+  "main.js": "/react-with-pwa/static/js/main.6062f0a8.chunk.js",
+  "main.js.map": "/react-with-pwa/static/js/main.6062f0a8.chunk.js.map",
   "static/js/1.b837342b.chunk.js": "/react-with-pwa/static/js/1.b837342b.chunk.js",
   "static/js/1.b837342b.chunk.js.map": "/react-with-pwa/static/js/1.b837342b.chunk.js.map",
   "static/css/2.af95ea4d.chunk.css": "/react-with-pwa/static/css/2.af95ea4d.chunk.css",
@@ -59,6 +59,6 @@
   "static/css/2.af95ea4d.chunk.css.map": "/react-with-pwa/static/css/2.af95ea4d.chunk.css.map",
   "static/css/main.d28f30db.chunk.css.map": "/react-with-pwa/static/css/main.d28f30db.chunk.css.map",
   "index.html": "/react-with-pwa/index.html",
-  "precache-manifest.6212cce30f78f1d340338b987d19a886.js": "/react-with-pwa/precache-manifest.6212cce30f78f1d340338b987d19a886.js",
+  "precache-manifest.19751005120200577b7097f5a686ec79.js": "/react-with-pwa/precache-manifest.19751005120200577b7097f5a686ec79.js",
   "service-worker.js": "/react-with-pwa/service-worker.js"
 }
