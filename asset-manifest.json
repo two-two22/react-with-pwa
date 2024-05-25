@@ -1,12 +1,12 @@
 {
   "main.css": "/react-with-pwa/static/css/main.d28f30db.chunk.css",
-  "main.js": "/react-with-pwa/static/js/main.6062f0a8.chunk.js",
-  "main.js.map": "/react-with-pwa/static/js/main.6062f0a8.chunk.js.map",
+  "main.js": "/react-with-pwa/static/js/main.37c34997.chunk.js",
+  "main.js.map": "/react-with-pwa/static/js/main.37c34997.chunk.js.map",
   "static/js/1.b837342b.chunk.js": "/react-with-pwa/static/js/1.b837342b.chunk.js",
   "static/js/1.b837342b.chunk.js.map": "/react-with-pwa/static/js/1.b837342b.chunk.js.map",
   "static/css/2.af95ea4d.chunk.css": "/react-with-pwa/static/css/2.af95ea4d.chunk.css",
-  "static/js/2.5694ae3c.chunk.js": "/react-with-pwa/static/js/2.5694ae3c.chunk.js",
-  "static/js/2.5694ae3c.chunk.js.map": "/react-with-pwa/static/js/2.5694ae3c.chunk.js.map",
+  "static/js/2.e8274771.chunk.js": "/react-with-pwa/static/js/2.e8274771.chunk.js",
+  "static/js/2.e8274771.chunk.js.map": "/react-with-pwa/static/js/2.e8274771.chunk.js.map",
   "runtime~main.js": "/react-with-pwa/static/js/runtime~main.1a9d9a08.js",
   "runtime~main.js.map": "/react-with-pwa/static/js/runtime~main.1a9d9a08.js.map",
   "static/media/cos_summer_light.png": "/react-with-pwa/static/media/cos_summer_light.54654937.png",
@@ -59,6 +59,6 @@
   "static/css/2.af95ea4d.chunk.css.map": "/react-with-pwa/static/css/2.af95ea4d.chunk.css.map",
   "static/css/main.d28f30db.chunk.css.map": "/react-with-pwa/static/css/main.d28f30db.chunk.css.map",
   "index.html": "/react-with-pwa/index.html",
-  "precache-manifest.19751005120200577b7097f5a686ec79.js": "/react-with-pwa/precache-manifest.19751005120200577b7097f5a686ec79.js",
+  "precache-manifest.783e3bef70a616776a4bb5fe168aada5.js": "/react-with-pwa/precache-manifest.783e3bef70a616776a4bb5fe168aada5.js",
   "service-worker.js": "/react-with-pwa/service-worker.js"
 }
